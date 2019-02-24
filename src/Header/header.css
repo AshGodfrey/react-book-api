@@ -1,0 +1,12 @@
+header {
+	background-color: black;
+	color: white;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;
+}
