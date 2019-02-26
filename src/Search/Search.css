@@ -1,0 +1,8 @@
+.search {
+	background-color: gray;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}

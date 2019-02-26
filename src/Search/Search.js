@@ -3,10 +3,10 @@ import './Search.css';
 
 export default function Search(props) {
 	return (
-		<div>
-			<label className="search" htmlFor="search">Search:</label>
+		<div className="search">
+			<label htmlFor="search">Search:</label>
 			<input
-				type="text"
+				type="input"
 				id="search"
 				name="search"
 				onChange={e => props.inputHandler(e.target.value)}

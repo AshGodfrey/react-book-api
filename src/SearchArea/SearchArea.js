@@ -19,7 +19,7 @@ export default class SearchArea extends Component {
 		return (
 			<form onSubmit={e => this.formHandler(e)}>
 				<Search inputHandler={input => this.getUserInput(input)} />
-				<Filters changeHandler={e => this.changeSelection(e)} />
+				<SecondSearchArea changeHandler={e => this.changeSelection(e)} />
 			</form>
 		);
 	}

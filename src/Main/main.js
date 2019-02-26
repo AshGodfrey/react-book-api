@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Main.css';
 
-import Search from '../Search/Search';
+import SearchArea from '../SearchArea/SearchArea';
 import BookList from '../BookList/BookList';
 
 export default class Main extends Component {
@@ -20,7 +20,7 @@ export default class Main extends Component {
 
 	createUrl() {
 		const endPoint = 'https://www.googleapis.com/books/v1/volumes';
-		const key = 'key=AIzaSyCFSW5dPZJMqvFKnN1KLbemN2oz2Miy50s';
+		const key = 'key=AIzaSyD9LP0cKF-yIMo4QneKNFToB5eKqYwMmBY';
 		const params = Object.keys(this.state.userInputs)
 			.map(key => `${key}=${this.state.userInputs[key]}`)
 			.filter(param => param !== 'filter=none');
@@ -52,7 +52,7 @@ export default class Main extends Component {
 	render() {
 		return (
 			<main>
-				<Search
+				<SearchArea
 					submitHandler={e => this.getData(e)}
 					inputHandler={input => this.setUserInput(input)}
 					changeHandler={(key, value) => {
