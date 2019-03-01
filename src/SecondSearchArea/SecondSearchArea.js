@@ -3,7 +3,7 @@ import './SecondSearchArea.css';
 
 export default function SecondSearchArea(props) {
 	return (
-		<div>
+		<div className="filters">
 			<label htmlFor="printType">Print Type: </label>
 			<select
 				id="printType"
